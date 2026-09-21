@@ -1,0 +1,38 @@
+	- It is crucial that you read the description very carefully, as many times as you need to fully understand the exercise.
+	- Draw a UML class diagram with the main classes and their attributes
+	- Compare this UML with the project provided	
+	
+	- Think / understand the algorithm to validate transactions
+		- Use polymorphism
+		- Read validate () and hasFaults () methods in Transaction
+
+	- Now, start developing the project follow this recommended order:
+		- Make the code compile, use the Eclipse quick fixes, click, click ...
+		- To remove compilation errors you have to create skeletons for all the important classes.
+		- Using the quick fixes saves a lot of time.
+
+	- Add exception handling
+		- In class Simulator.
+			A handler for Programming errors -> cath RuntimeExceptions.
+			Other User errors.
+		- Use FileLogger implemented in util project
+
+	- Write tests for hierarchy of XxxxTransaction .validate (), righ now
+		- You will save time and force yourself to clearly understand the core of the project.
+		- Think of all the possible scenarios that could appear
+		- Implement hierarchy now. Stop coding when these tests pass.
+
+	- Write tests for TransactionValidator.validate () 
+		- Make tests pass. Same pattern
+		- Think of scenarios, write scenarios, stop coding when tests pass ..
+
+	- Write tests for TransactionLoader (…) .load ()
+		- Make them pass, that will force you to:
+			- Implement the Parser
+			- Use XxxxFileUtil
+
+	- Implement serialization
+	- Implement the xTransactionWriters
+	- Implement sorting
+
+	- Run main, check everything.
